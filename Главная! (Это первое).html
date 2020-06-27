@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ОргТехСервис</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post img {
+	max-width: 100%; height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:;
+  margin: 0;
+  background: url(img/back.png); }
+   A {
+    color: white; /* Цвет ссылок */
+   }
+   A:visited {
+    color: white; /* Цвет посещенных ссылок */
+   }
+   A:active {
+    color: white; /* Цвет активных ссылок */
+   }
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: url(img/s1200.jpg);
+
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #20344c;
+}
+
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #2f458e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+ 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+ 
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+ 
+.button:hover span {
+  padding-right: 25px;
+}
+ 
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+<center>
+    <img src ="img/s1200.jpg" width="1197" height="490" >
+</center>
+
+</div>
+
+
+<div class="navbar">
+  <a href="Главная! (Это первое).html">Главная</a>
+  <a href="Регистрация.html">Регистрация</a>
+  <a href="Товары и услуги.html">Товары и услуги</a>
+  <a href="Наше местоположение.html">Наше местоположение</a>
+</div>
+
+
+<div class="row">
+  <div class="side">
+    <h2>О Нас</h2> 
+    <img src ="img/s1200.jpg" width="300" height="490" >
+    <p>Мы являемся не только прокатчиками оргтехники, но и работаем с ней!</p>
+    <h3>Больше информации</h3>
+    <p>Больше о нас можно узнать во вкладке "Товары и услуги"</p>
+    <button class="button"><a href ="Товары и услуги.html"><span>Товары и услуги </span></button></a>
+    <button class="button" ><a href ="Регистрация.html"><span>Регистрация    </span></button></a>
+    <button class="button"><a href ="Наше местоположение.html"><span>Наше местоположение </span></button></a>
+  </div>
+  <div class="main">
+    <h2>Группы оргтехники: перечень</h2>
+    <img src ="img/KpLWJJ1bGgY.jpg" width="800" height="490" >
+    <p>Компьютеры;
+ноутбуки;
+планшеты;
+калькуляторы;
+электронные записные книжки;
+Печатные машинки;
+принтеры;
+сканеры;
+ксероксы;
+Графические дисплеи;
+трафареты
+чертежные приборы;штриховальное оборудование;
+Читающие автоматы;
+считыватели штрих кодов;оборудования для уничтожения документов;
+нумераторы;
+Телефон;
+переговорное устройство;
+приборы поисково-взрывной сигнализации и т. п.</p>
+  
+    <br>
+    <h2>Правила работы c оргтехникой</h2>
+
+   <img src ="img/PB8xqgz2t64.jpg" width="800" height="490" >
+    <p>Личная гигиена. Любая офисная оргтехника нуждается в аккуратной эксплуатации. Работают с оргтехникой чистыми руками.</p>
+    <p>Чистота. Рабочее место, стационарный или портативный компьютер, мышка, клавиатура и печатающие аппараты должны содержаться в чистоте, поскольку техника восприимчива к скоплению пыли. Нельзя есть вблизи оргтехники, т. к. остатки еды могут попасть внутрь и стать причиной поломки.</p>
+    <p>Замена расходников. Смена картриджа в лазерном принтере проводится в защитных рукавицах. Внутри картриджа находится тонер, изготовленный из нефтепродуктов, нужно избегать его попадания на одежду, руки и в дыхательные пути.</p>
+    <p>Электробезопасность. При любой неисправности или повреждении проводов оргтехнику надо обесточить и отдать на ремонт в сервисный центр.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>ОргТехСервис, 2020.</h2>
+</div>
+
+</body>
+</html>

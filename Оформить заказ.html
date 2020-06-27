@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ОргТехСервис</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post img {
+	max-width: 100%; height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:;
+  margin: 0;
+  background: url(img/back.png); }
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: url(img/s1200.jpg);
+
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #20344c;
+}
+
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+.container {
+    padding: 36px;
+    background-color: #f0d7c1;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table; 
+    background-color: #f0d7c1
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+<center>
+    <img src ="img/s1200.jpg" width="1197" height="490" >
+</center>
+
+</div>
+
+
+<div class="navbar">
+  <a href="Главная! (Это первое).html">Главная</a>
+  <a href="Регистрация.html">Регистрация</a>
+  <a href="Товары и услуги.html">Товары и услуги</a>
+  <a href="Наше местоположение.html">Наше местоположение</a>
+</div>
+
+
+
+<form action="#" style="border:7px solid #20344c">
+  <div class="container">
+<center>
+   <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="#">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Платежный адрес</h3>
+            <label for="fname"><i class="fa fa-user"></i> ФИО</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ричард Томбстон Хартманн">
+            <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+            <input type="text" id="email" name="email" placeholder="richard@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Ваш адрес</label>
+            <input type="text" id="adr" name="address" placeholder="Улица 8-ая Железнодорожная">
+            <label for="city"><i class="fa fa-institution"></i> Город</label>
+            <input type="text" id="city" name="city" placeholder="Астрахань">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Область</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Индекс</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Оплата</h3>
+            <label for="fname"></label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Имя на карте</label>
+            <input type="text" id="cname" name="cardname" placeholder="РИЧАРД ТОМБСТОН">
+            <label for="ccnum">Номер карты</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Месяц</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Сентябрь">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Год</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2022">
+              </div>
+              <div class="col-50">
+                <label for="cvv">Код безопасности</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Адрес доставки такой же, как и для выставления счетов
+        </label>
+        <input type="submit" value="Оформить заказ" class="btn">
+        <a href="test.html"><button type="button" class="cancelbtn">Отменить заказ</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+   
+
+</body>
+</html>
